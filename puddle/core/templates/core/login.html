@@ -28,8 +28,9 @@
                     {% for field in form %}
                         {{ field.errors }}
                     {% endfor %}
+                    {{ form.non_field_errors }}
                 </div>
-                {{ form.non_field_errors }}
+                
             {% endif %}
 
 
